@@ -11,7 +11,7 @@ void theTunnels()
     int acidRequired = 0;
     char uselessPiece[256];
     printf("\nYou enter the heating tunnels, climbing down a rusty ladder.\n");
-    printf("Despite the name, you feel a chill settle deep within your bones.\n");
+    printf("Despite the name, you feel a chill settle deep within your bones.\n\n");
     while(answerStatus == 0)
     {
         printf("Ahead of you are two paths, left [1] and right [2]. Which should you go down?\n > ");
@@ -30,7 +30,7 @@ void theTunnels()
         }
         else
         {
-            printf("Unknown command. Use the bracketed numbers next to the action you want to attempt!");
+            printf("Unknown command. Use the bracketed numbers next to the action you want to attempt!\n\n");
         }
     }
     answer = 0;
@@ -38,7 +38,7 @@ void theTunnels()
     if (pathSelected == 1)
     {
         printf("A metal room greets you. Imposing steel climbs up the wall, blackened by what appears to be soot.\n");
-        printf("A door to the exit lies in front of you, padlocked shut, and a strange figure lies to the right.\n");
+        printf("A door to the exit lies in front of you, padlocked shut, and a strange figure lies to the right.\n\n");
         while (answerStatus == 0)
         {
             printf("Do you want to investigate the figure [1] or go through the door [2]?\n> ");
@@ -54,7 +54,7 @@ void theTunnels()
                 else
                 {
                 printf("You approach the figure. It looks burned, and it's clutching an axe in it's hand. That could probably break the lock!\n");
-                printf("You pry the axe out of the figures hand, and turn around.\n\n Taking a step away, you hear a scraping sound behind you.\n You should probably leave!\n\n");
+                printf("You pry the axe out of the figures hand, and turn around.\nTaking a step away, you hear a scraping sound behind you.\nYou should probably leave!\n\n");
                 keyGot = 1;
                 }
             }
@@ -101,9 +101,9 @@ void theTunnels()
     else
     {
         answerStatus = 0;
-        printf("A strange greenhouse sits in the tunnels. Odd plants with covered bulbs seem to watch you.\n\n");
+        printf("A strange greenhouse sits in the tunnels. Odd plants with covered bulbs seem to watch you.\n");
         printf("You see a ladder leading to a manhole, although it's covered with vines.\n");
-        printf("There's also a table of chemicals, nestled away in the corner.");
+        printf("There's also a table of chemicals, nestled away in the corner.\n\n");
         while (answerStatus == 0)
         {
             printf("\nDo you examine the plants [1], the table [2], or the manhole[3]?\n > ");
@@ -117,7 +117,7 @@ void theTunnels()
             else if (answer == 1)
             {
                 printf("The plants are a light green, and seem to sway back and forth, even with no breeze.\n");
-                printf("Best to leave well enough alone, at least for now.\n");2
+                printf("Best to leave well enough alone, at least for now.\n\n");
             }
             else if (answer == 2)
             {
@@ -148,21 +148,21 @@ void theTunnels()
             }
             else
             {
-                printf("Unknown command. Use the bracketed numbers next to the action you want to attempt!");
+                printf("Unknown command. Use the bracketed numbers next to the action you want to attempt!\n\n");
             }
         }
         if (playerInjured == 0)
         {
             printf("You take a moment to breathe. The sunlight filters through trees.\n");
-            printf("You drop the acid. No use to you now.\n\n");
-            printf("You made it out unharmed, which is all you can really ask for!\n");
+            printf("You drop the acid. No use to you now.\n");
+            printf("You made it out unharmed, which is all you can really ask for!\n\n");
             
         }
         else
         {
             printf("You wake up on the surface, blood drying on your face.\n");
             printf("You stand up, and slowly walk toward the nearest hospital, thinking of a story\n");
-            printf("At least you're alive?");
+            printf("At least you're alive?\n\n");
         }
 
     }
